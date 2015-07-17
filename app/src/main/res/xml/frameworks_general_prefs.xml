@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="aryamod_kill_app"
+        android:summaryOff="Opens S-finder"
+        android:summaryOn="Kills Apps"
+        android:title="Log press Menu Button" />
+    <SwitchPreference
+        android:defaultValue="flase"
+        android:key="homewake_toggle"
+        android:summaryOff="Home button now disabled"
+        android:summaryOn="Home button will wake phone"
+        android:title="Home Button Function" />
+    <PreferenceCategory android:title="Power Extended Menu">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Power_Off"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Power Off" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Airplane_Mode"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Airplane Mode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Restart"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Restart" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="aryamod_emergency_pm"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Emergency Mode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="screenshot"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Screenshot" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="screenrecord"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Screen Record" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Flashlight"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Flashlight" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pm_sound_panel"
+            android:summaryOff="disabled"
+            android:summaryOn="enabled"
+            android:title="Sound Mode" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Clock Mod">
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/clock_style_entries"
+            android:entryValues="@array/clock_style_values"
+            android:key="clock_style"
+            android:title="Status Bar Clock Position" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/clock_ampm_entries"
+            android:entryValues="@array/clock_ampm_values"
+            android:key="clock_am_pm_style"
+            android:title="Clock AM/PM" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/clock_weekday_entries"
+            android:entryValues="@array/clock_weekday_values"
+            android:key="clock_weekday"
+            android:title="Clock Weekday" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:key="clock_color"
+            android:title="Choose Clock Color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Backgrounds">
+        <PreferenceScreen
+            android:key="com.potato.gradientapp.MainActivity"
+            android:summary="StatusBar Background"
+            android:title="Potato Gradient" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Battery Icon Settings">
+        <SwitchPreference
+            android:title="Display Percentage"
+            android:key="display_battery_percentage"
+            android:summaryOn="Battery text shown"
+            android:summaryOff="Battery text is hidden" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Percentage Color"
+            android:key="battery_text_color"
+            android:summary="Choose battery percent color"
+            android:dependency="display_battery_percentage" />
+        <SwitchPreference
+            android:title="Display Percentage inside Battery Icon"
+            android:key="status_bar_show_battery_percent"
+            android:defaultValue="false"
+            android:summaryOn="Text shown"
+            android:summaryOff="Text hidden" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Battery Color"
+            android:key="battery_color"
+            android:summary="Choose color of battery" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:entries="@array/battery_bar_entries"
+            android:title="Battery Bar"
+            android:key="battery_bar"
+            android:defaultValue="1"
+            android:entryValues="@array/battery_bar_values" />
+        <SwitchPreference
+            android:title="Battery bar animation"
+            android:key="battery_bar_animate"
+            android:summaryOn="Charging animation enabled"
+            android:summaryOff="Animation disabled" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:entries="@array/battery_bar_style_entries"
+            android:title="Battery bar style"
+            android:key="battery_bar_style"
+            android:defaultValue="1"
+            android:entryValues="@array/battery_bar_style_values" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:entries="@array/battery_bar_thickness_entries"
+            android:title="Thickness of battery bar"
+            android:key="battery_bar_thickness"
+            android:defaultValue="1"
+            android:entryValues="@array/battery_bar_thickness_values" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Battery Bar Color"
+            android:key="battery_bar_color"
+            android:summary="Choose color of battery bar" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Hidden Buttons">
+            <CheckBoxPreference
+                android:title="Hidden Left button on statusbar"
+                android:key="aryamod_keybutton_recent_left"
+                android:defaultValue="false"
+                android:summaryOn="Triggers recent apps"
+                android:summaryOff="Disable" />
+            <CheckBoxPreference
+                android:title="Hidden Center button on statusbar"
+                android:key="aryamod_keybutton_home_center"
+                android:defaultValue="false"
+                android:summaryOn="Triggers home button"
+                android:summaryOff="Disabled" />
+            <CheckBoxPreference
+                android:title="Hidden Right button on statusbar"
+                android:key="aryamod_keybutton_lock_right"
+                android:defaultValue="true"
+                android:summaryOn="Locks the screen"
+                android:summaryOff="Disabled" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Statusbar Icon Colors">
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="WiFi Icon Color"
+            android:key="statusbar_wifi_color"
+            android:summary="Pick color of wifi icon" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Signalbar Icon Color"
+            android:key="statusbar_signal_color"
+            android:summary="Select color of signalbars" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Data Icon Color"
+            android:key="statusbar_data_color"
+            android:summary="3G/4G/LTE data icon color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Notification Icons Color"
+            android:key="statusbar_icon_color"
+            android:summary="Volume, bluetooth, popups, etc.." />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Statusbar Icon Toggles">
+        <SwitchPreference
+            android:title="Alarm Icon"
+            android:key="statusbar_hide_alarm"
+            android:summaryOn="Alarm icon is shown"
+            android:summaryOff="Alarm icon now hidden" />
+        <SwitchPreference
+            android:title="Bluetooth Icon"
+            android:key="bluetooth_icon"
+            android:summaryOn="Icon is shown"
+            android:summaryOff="Icon is now hidden" />
+        <SwitchPreference
+            android:title="Statusbar Ticker"
+            android:key="ticker_toggle"
+            android:summaryOn="Ticker is hidden"
+            android:summaryOff="Ticker is shown" />
+    </PreferenceCategory>
+</PreferenceScreen>

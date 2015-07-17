@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:title="Disable wallpaper scrolling"
+        android:key="aryamod_scroll"
+        android:defaultValue="true"
+        android:summaryOn="Disabled"
+        android:summaryOff="Enabled" />
+    <SwitchPreference
+        android:title="Launcher Rotation"
+        android:key="launcher_rotation"
+        android:summaryOn="Currently enabled"
+        android:summaryOff="Rotation disabled" />
+    <PreferenceScreen
+        android:key="com.sec.android.app.themechooser.MainTabActivity"
+        android:summary="Choose launcher theme"
+        android:title="Theme Manager" />
+    <PreferenceScreen
+        android:key="com.wubydax.geartwswipe.ResetDialogActivity"
+        android:summary="Alter home swipe target"
+        android:title="TW Swipe" />
+    </PreferenceScreen>

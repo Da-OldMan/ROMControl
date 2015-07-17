@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:title="Quick Unlock"
+        android:key="lockscreen_quick_unlock_control"
+        android:defaultValue="true"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled" />
+    <SwitchPreference
+        android:title="Pin Pad Scramble"
+        android:key="lockscreen_scramble_pin_layout"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:title="Ink Effect Color"
+        android:key="db_inkeffect_picker"
+        android:summary="Ink Effect Color"
+        android:dialogTitle="Select Color"
+        android:defaultValue="#ff00ff11" />
+    <SwitchPreference
+        android:title="Random Ink Effect Colour"
+        android:key="random_ink"
+        android:summaryOn="Random Colour on"
+        android:summaryOff="Random Colour Off" />
+    <SwitchPreference
+        android:title="Next Alarm"
+        android:key="next_alarm"
+        android:defaultValue="true"
+        android:summaryOn="Hide"
+        android:summaryOff="Show" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Next Alarm Text Color"
+        android:key="next_alarm_color"
+        android:summary="Choose color" />
+changes" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ff000000"
+        android:title="Lockscreen Pinpad Background"
+        android:key="keypad_button_color"
+        android:summary="Choose pinpad button color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Lockscreen Pinpad Digits"
+        android:key="keypad_digit_color"
+        android:summary="Choose pinpad digit color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Lockscreen Pinpad Letters"
+        android:key="keypad_letter_color"
+        android:summary="Choose pinpad letter color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Lockscreen Clock"
+        android:key="kg_clock_color"
+        android:summary="Choose clock color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Lockscreen Clock AMPM"
+        android:key="kg_clock_AMPM_color"
+        android:summary="Choose AMPM color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="#ffffffff"
+        android:title="Lockscreen Date"
+        android:key="kg_date_color"
+        android:summary="Choose date color" />
+    <PreferenceCategory android:title="Carrier Text">
+        <SwitchPreference
+            android:title="Use Custom Carrier Text"
+            android:key="custom_carrier"
+            android:defaultValue="false"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.prefs.MyEditTextPreference
+            android:title="Carrier Custom Text"
+            android:key="custom_carrier_text"
+            android:defaultValue="AryaMod"
+            android:summary="Leave BLANK to remove"
+            android:dialogTitle="Set Custom Text" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Carrier Text Color"
+            android:key="carrier_color"
+            android:summary="Choose carrier color, requires UI restart" />
+    </PreferenceCategory>
+</PreferenceScreen>

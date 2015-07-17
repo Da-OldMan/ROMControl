@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Volume Music Control">
+        <SwitchPreference
+            android:title="@string/volbtn_toggle_title"
+            android:key="volbtn_music_controls"
+            android:defaultValue="false" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:persistent="true"
+            android:defaultValue="300"
+            android:entries="@array/volbtn_timeout_entries"
+            android:title="volbtn_music_controls_title"
+            android:key="volbtn_timeout"
+            android:summary="@string/volbtn_timeout_summary"
+            android:dependency="volbtn_music_controls"
+            android:entryValues="@array/volbtn_timeout_values" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:persistent="true"
+            android:defaultValue="Next"
+            android:entries="@array/volbtn_action_entries"
+            android:title="Volumm Up Action"
+            android:key="volbtn_vol_up"
+            android:summary="@string/volbtn_vol_up_summary"
+            android:dependency="volbtn_music_controls"
+            android:entryValues="@array/volbtn_action_values" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:persistent="true"
+            android:defaultValue="Previous"
+            android:entries="@array/volbtn_action_entries"
+            android:title="@string/volbtn_vol_down_title"
+            android:key="volbtn_vol_down"
+            android:summary="@string/volbtn_vol_down_summary"
+            android:dependency="volbtn_music_controls"
+            android:entryValues="@array/volbtn_action_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Boot Sounds">
+        <PreferenceScreen
+            android:title="Disable Boot Sounds"
+            android:key="script#disbtsnds"
+            android:summary="Disables the boot sounds" />
+        <PreferenceScreen
+            android:title="Enable Boot Sound"
+            android:key="script#enbtsnds"
+            android:summary="Enables the boot sounds" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Volume Slider Sound">
+        <PreferenceScreen
+            android:title="Disable Volume Slider"
+            android:key="script#disvolsnds" />
+        <PreferenceScreen
+            android:title="Enable Volume Slider"
+            android:key="script#envolsnds" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Low Battery Notification Sound">
+        <PreferenceScreen
+            android:title="Disable Low Battery Sound"
+            android:key="script#dislowbatsnd"
+            android:summary="Disables low battery sound" />
+        <PreferenceScreen
+            android:title="Enable Low Battery Sounds"
+            android:key="script#enlowbatsnd"
+            android:summary="Enables low battery sound" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other Notifications">
+    <SwitchPreference
+        android:title="USB Plug/Unplug Wake Screen"
+        android:key="usb_plugged"
+        android:summaryOn="On"
+        android:summaryOff="Off" />
+    </PreferenceCategory>
+</PreferenceScreen>

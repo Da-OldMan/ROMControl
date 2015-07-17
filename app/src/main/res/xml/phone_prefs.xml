@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Phone and IncallUI Mods">
+        <SwitchPreference
+            android:title="Increasing Ringtone"
+            android:key="db_inc_volume_disable"
+            android:summaryOn="Increasing ringtone enabled"
+            android:summaryOff="Increasing ringtone disabled" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:defaultValue="5000"
+        android:dialogTitle="End Call Delay (ms)"
+        android:entries="@array/call_delay_entries"
+        android:entryValues="@array/call_delay_values"
+        android:key="db_call_delay"
+        android:title="End Call Delay" />
+    <PreferenceScreen
+        android:key="script#enflscrncall"
+        android:summary="PHONE WILL REBOOT AUTOMATICALLY"
+        android:title="FullScreen In-call" />
+    <PreferenceScreen
+        android:key="script#disflscrncall"
+        android:summary="PHONE WILL REBOOT AUTOMATICALLY"
+        android:title="Stock In-call Screen" />
+    <SwitchPreference
+        android:defaultValue="flase"
+        android:key="last_spoke"
+        android:summaryOff="Option is shown"
+        android:summaryOn="Option will not be shown"
+        android:title="Remove Last spoke" />
+    <SwitchPreference
+        android:defaultValue="flase"
+        android:key="last_message"
+        android:summaryOff="Option is shown"
+        android:summaryOn="Option will not be shown"
+        android:title="Remove Last message" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Dial-pad theme">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="dialer_background_switcher"
+            android:summaryOff="stock dialpad background"
+            android:summaryOn="custom dialpad background"
+            android:title="Dialer Background Switcher" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/dialer_background_style_entries"
+            android:entryValues="@array/dialer_background_style_values"
+            android:key="dialer_background_style"
+            android:title="Dialer Background Style" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            android:key="dialer_background_color"
+            android:title="Dialer Background Color"
+            android:defaultValue="#2c2c2c"
+            alphaSlider="true"/>
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            android:key="main_digit_color"
+            android:title="Dialpad Digits Color"
+            android:defaultValue="#34b0ff"
+            alphaSlider="true"/>
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            android:key="main_letter_color"
+            android:title="Dialpad Letters Color"
+            android:defaultValue="#dfdfdf"
+            alphaSlider="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="InCall-UI theme">
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:defaultValue="1"
+        android:entries="@array/incall_background_entries"
+        android:entryValues="@array/incall_background_values"
+        android:key="incall_background"
+        android:title="InCall Backgrounds" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:key="incall_digit_color"
+        android:title="Incall dialpad Digits Color"
+        android:defaultValue="#2c2c2c"
+        alphaSlider="true"/>
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:key="incall_letter_color"
+        android:title="Incall dialpad Letters Color"
+        android:defaultValue="#34b0ff"
+        alphaSlider="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="com.android.settings.SViewColor2014"
+        android:summary="Choose Background for SView Window"
+        android:title="S View window wallpaper" />
+    <PreferenceScreen
+        android:key="mobi.xperiacle.upsm.manager.MainActivity"
+        android:summary="Enable apps on UPSM"
+        android:title="UPSM Manager" />
+    <PreferenceScreen
+        android:key="mobi.xperiacle.touchwiz.themer.pro.IconThemeManager"
+        android:summary="TW Icon Launcher Themer"
+        android:title="Galaxy Icon Themer Pro" />
+    <PreferenceScreen
+        android:key="mobi.xperiacle.touchwiz.themer.IconThemer"
+        android:summary="TW Icon Launcher Themer"
+        android:title="Galaxy Icon Themer" />
+    <PreferenceScreen
+        android:key="eu.chainfire.supersu.MainActivity"
+        android:summary="Root Access Control"
+        android:title="SuperSu" />
+    <PreferenceScreen
+        android:summary="Check AryaMod Addons and Update"
+        android:title="OTA Updates">
+        <intent
+            android:targetClass="com.ota.updates.activities.MainActivity"
+            android:targetPackage="com.ota.updates" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Custom battery chooser"
+        android:title="3Minit Battery Mod">
+    <intent
+        android:targetClass="com.three.minit.minitbatterysettings.MainActivity"
+        android:targetPackage="com.three.minit.minitbatterysettings.free" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Toggles Number and Theme">
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:entries="@array/toggle_entries"
+            android:title="Visible Toggles Shown"
+            android:key="toggle_number"
+            android:summary="Number shown on screen"
+            android:defaultValue="5"
+            android:entryValues="@array/toggle_values" />
+        <PreferenceScreen
+            android:title="Enable extra toggles"
+            android:key="script#exttogs"
+            android:summary="Enabled all toggles in notification panel" />
+        <PreferenceScreen
+            android:title="Restore toggles"
+            android:key="script#restoggs"
+            android:summary="Restore toggles in notification panel" />
+    </PreferenceCategory>
+        <PreferenceScreen
+            android:title="Theme"
+            android:summary="Notificationa Panle Theme Style">
+        <PreferenceScreen
+            android:title="Elegant Marble"
+            android:key="script#elegant_marble"
+            android:summary="Elegant Marble Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Emerald"
+            android:key="script#emerald_green"
+            android:summary="Emerald Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Glass"
+            android:key="script#glass_button"
+            android:summary="Glass Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Modern Aokp"
+            android:key="script#modern_dark"
+            android:summary="Modern AOKP Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="AOKP"
+            android:key="script#android"
+            android:summary="AOKP Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Samsung Cyan"
+            android:key="script#sam_cyan"
+            android:summary="Samsung Cyan Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Samsung Purple"
+            android:key="script#samy_purp"
+            android:summary="Samsung Purple Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Black"
+            android:key="script#plain_dark"
+            android:summary="Black Theme for Notification Panel" />
+        <PreferenceScreen
+            android:title="Stock"
+            android:key="script#restore_stock"
+            android:summary="Stock Theme for Notification Panel" />
+        </PreferenceScreen>
+    <PreferenceCategory android:title="Notification Panel Carrier Text">
+        <SwitchPreference
+            android:title="Use Custom Carrier Text"
+            android:key="custom_carrier"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.prefs.MyEditTextPreference
+            android:title="Carrier Custom Text"
+            android:key="panel_carrier_label"
+            android:summary="Leave BLANK to remove"
+            android:dialogTitle="Set Custom Text" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            android:key="panel_carrier_color"
+            android:title="Carrier Text Color"
+            android:defaultValue="ff000000"
+            android:summary="Choose carrier color"
+            alphaSlider="true"
+            hexValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Panel Display">
+        <SwitchPreference
+            android:title="Display SFinder/QConnect Panel"
+            android:key="quick_connect_toggle"
+            android:summaryOn="Panel is hidden"
+            android:summaryOff="Panel is shown" />
+        <SwitchPreference
+            android:title="Ongoing Notifications"
+            android:key="hide_ongoing_notif"
+            android:defaultValue="true"
+            android:summaryOn="Currently hidden"
+            android:summaryOff="Currently shown" />
+        <SwitchPreference
+            android:title="Device Info"
+            android:key="device_info"
+            android:summaryOn="Device Info currently removed"
+            android:summaryOff="Currently shown" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Device Info Header Color"
+            android:key="device_info_color"
+            android:summary="Choose color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="#ffffffff"
+            android:title="Device Info Info Color"
+            android:key="device_info_color2"
+            android:summary="Choose color" />
+    </PreferenceCategory>
+</PreferenceScreen>

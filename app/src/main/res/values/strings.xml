@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Rom Control</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="nav_drawer_items">
+        <item>Statusbar Mods</item>
+        <item>Notification Panel</item>
+        <item>Phone and Call Mods</item>
+        <item>Launcher Settings</item>
+        <item>Framework and General</item>
+        <item>Sound and Notifications</item>
+        <item>Lockscreen Mods</item>
+        <item>Other Mods</item>
+        <item>Useful Apps</item>
+        <item>Set Theme</item>
+    </string-array>
+    <string-array name="clock_style_entries">
+        <item>Left clock</item>
+        <item>Right clock</item>
+        <item>Center clock</item>
+        <item>No clock</item>
+    </string-array>
+    <string-array name="clock_style_values">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="clock_ampm_entries">
+        <item>Hide AM/PM</item>
+        <item>Small AM/PM</item>
+        <item>Regular AM/PM</item>
+    </string-array>
+    <string-array name="clock_ampm_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="clock_weekday_entries">
+        <item>Hide weekday</item>
+        <item>Small weekday</item>
+        <item>Regular weekday</item>
+    </string-array>
+    <string-array name="clock_weekday_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="call_delay_entries">
+        <item>No delay</item>
+        <item>1000ms</item>
+        <item>2500ms</item>
+        <item>Default (5000ms)</item>
+    </string-array>
+    <string-array name="call_delay_values">
+        <item>0</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="dialer_background_style_entries">
+        <item>IronMan</item>
+        <item>Daft Punk</item>
+        <item>Capitan America</item>
+        <item>Leather</item>
+        <item>Jean</item>
+        <item>SpiderMan</item>
+        <item>Minion</item>
+        <item>Material</item>
+        <item>Silver</item>
+        <item>Dark Lime</item>
+    </string-array>
+    <string-array name="dialer_background_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="incall_background_entries">
+        <item>Stock</item>
+        <item>IronMan</item>
+        <item>Daft Punk</item>
+        <item>Walker</item>
+        <item>Astronaut</item>
+        <item>SpiderMan</item>
+        <item>Minion</item>
+        <item>AOKP</item>
+        <item>DrakLord</item>
+        <item>Lion</item>
+    </string-array>
+    <string-array name="incall_background_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="battery_bar_entries">
+        <item>Hide</item>
+        <item>Show</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Regular</item>
+        <item>Center-mirrored</item>
+    </string-array>
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_entries">
+        <item>1 dp</item>
+        <item>2 dp</item>
+        <item>3 dp</item>
+        <item>4 dp</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="toggle_entries">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="toggle_values">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string-array name="theme_items">
+        <item>Dark theme</item>
+        <item>Light theme</item>
+    </string-array>
+    <string name="volbtn_music_controls_title">Music Control</string>
+    <string name="volbtn_music_controls_summary">Customize volume rocker action</string>
+    <string name="volbtn_toggle_title">Music Control</string>
+    <string name="volbtn_vol_up_title">Volume Up action</string>
+    <string name="volbtn_vol_up_summary">%s</string>
+    <string name="volbtn_vol_down_title">Volume Down action</string>
+    <string name="volbtn_vol_down_summary">%s</string>
+    <string name="volbtn_timeout_title">Button delay</string>
+    <string name="volbtn_timeout_summary">%s</string>
+    <string-array name="volbtn_action_entries">
+        <item>Next</item>
+        <item>Pause</item>
+        <item>Play</item>
+        <item>Play/Pause</item>
+        <item>Previous</item>
+        <item>Stop</item>
+    </string-array>
+    <string-array name="volbtn_action_values">
+        <item>87</item>
+        <item>127</item>
+        <item>126</item>
+        <item>85</item>
+        <item>88</item>
+        <item>86</item>
+    </string-array>
+    <string-array name="volbtn_timeout_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
+    </string-array>
+    <string-array name="volbtn_timeout_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+    <string name="missing_su">Your device is either not rooted or the app was denied root permissions.\n\nPlease check your root/su status and try again later.</string>
+    <string name="exit">Exit App</string>
+    <string name="gaining_root">Acquiring root access. Please wait...</string>
+    <string name="missing_su_title">Could not get root access</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="theme_chooser_dialog_title">Choose Theme</string>
+    <string name="app_reboot_required_title">App Reboot Required</string>
+    <string name="app_reboot_required_message">%1$s reboot is required for the changes to take effect.\n\nReboot now?</string>
+</resources>

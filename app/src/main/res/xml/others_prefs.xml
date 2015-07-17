@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Stock Email Mod">
+        <SwitchPreference
+            android:title="Email Exchange Security"
+            android:key="aryamod_email_security"
+            android:summaryOn="Disabled " android:summaryOff="Enabled" />
+    </PreferenceCategory>
+</PreferenceScreen>
